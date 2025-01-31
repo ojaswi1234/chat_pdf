@@ -4,7 +4,7 @@ import { useDropzone } from 'react-dropzone';
 import { FileCheck, RocketIcon } from 'lucide-react';
 function Uploader() {
     const onDrop = useCallback((acceptedFiles: File[]) => {
-       
+       console.log(acceptedFiles);
       }, [])
       const {getRootProps, getInputProps, isDragActive, isDragAccept } = useDropzone({onDrop})
     
