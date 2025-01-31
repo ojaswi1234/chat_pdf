@@ -13,9 +13,9 @@ const Header = () => {
         <SignedIn>
             <div className="flex items-center space-x-5 ">
        <Button asChild variant="link">
-        <Link href="/dashboard/upload" className="hidden md:flex border-[1px] border-blue-600 text-blue-700 hover:bg-blue-600 hover:text-white font-bold hover:no-underline">Pricing</Link>
+        <Link href="/dashboard/price" className="hidden md:flex border-[1px] border-blue-600 bg-white text-blue-700 hover:bg-blue-600 hover:text-white font-bold hover:no-underline">Pricing</Link>
        </Button>
-       <Button asChild variant="outline" className="border-green-600 text-green-700 hover:bg-green-600 hover:text-white font-bold">
+       <Button asChild variant="outline" className="border-green-600 text-green-700 hover:bg-green-600 hover:text-white bg-white  font-bold">
         <Link href="/dashboard/"><FileInputIcon /> My Document</Link>
        </Button>
         <UserButton />

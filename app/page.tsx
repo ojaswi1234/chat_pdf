@@ -1,6 +1,10 @@
 import { BrainCogIcon, GlobeIcon, ServerCogIcon, ZapIcon } from "lucide-react";
 import Link from 'next/link';
 import Image from 'next/image';
+
+
+
+
 const feature= [
   {
     name: 'Store Your PDF Documents', 
@@ -25,6 +29,7 @@ const feature= [
 ];
 
 export default function Home() {
+
   return (
     <main className="overflow-y-scroll p-2 bg-gradient-to-l from-green-500 to-yellow-500 flex-1 ">
       <div className="bg-black py-24 rounded-md text-white">
@@ -39,7 +44,14 @@ export default function Home() {
       </div>
       <div className="flex flex-col sm:grid sm:grid-cols-2 justify-center items-center sm:gap-2 mt-10">
         {feature.map((item, index) => (
-          <div key={index} className="flex flex-col items-center mt-8 sm:mt-5 w-64 sm:w-full">
+          <div key={index} className="flex flex-col items-center mt-8 sm:mt-5 w-64 sm:w-full" data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center">
             <item.icon className="text-4xl text-yellow-500" />
             <h2 className="text-lg sm:text-2xl font-bold mt-0 sm:mt-2">{item.name}</h2>
             <p className="text-center mt-2">{item.description}</p>
